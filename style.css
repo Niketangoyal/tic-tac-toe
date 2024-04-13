@@ -1,0 +1,118 @@
+nav ul {
+  list-style-type: none;
+  
+  
+}
+nav ul li {
+  font-size: 35px;
+}
+nav {
+  background-color: rgba(28, 4, 50, 0.978);
+  color: white;
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
+}
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.gameContainer {
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+}
+.container {
+  display: grid;
+  grid-template-rows: repeat(3, 10vw);
+  grid-template-columns: repeat(3, 10vw);
+  /* justify-items: center;
+align-items: center; */
+  font-family: "Roboto", sans-serif;
+}
+/* .box{
+    width: 40px;
+    height: 40px;
+} */
+.box {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 8vw;
+}
+.box:hover {
+  background-color: rgb(228, 204, 249);
+  cursor: pointer;
+}
+.gameInfo {
+  padding: 0 34px;
+  font-family: "Baloo Bhaina 2", sans-serif;
+}
+
+.br-0 {
+  border-right: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.bt-0 {
+  border-top: 0;
+}
+.bb-0 {
+  border-bottom: 0;
+}
+.winning-cell {
+  /* Define styles to highlight winning cells */
+  background-color: rgb(244, 244, 244) !important; /* For example, change background color to yellow */
+}
+button {
+  padding: 10px;
+  color: rgb(104, 102, 102);
+  background-color: rgb(236, 236, 247);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 0;
+
+  border: none;
+}
+.info {
+  font-size: large;
+  margin-top: 3vh;
+}
+@media screen and (max-width: 599px) {
+  /* Add styles specific to screens smaller than 600px here */
+  .gameContainer {
+  
+      /* Add styles specific to screens smaller than 600px here */
+      flex-direction: column;
+      align-items: center;
+
+
+    row-gap: 33px;
+
+}
+}
+@media screen and (max-width: 500px) {
+  /* Add styles specific to screens smaller than 600px here */
+  .container {
+   
+      /* Add styles specific to screens smaller than 600px here */
+     grid-template-columns: repeat(3,20vw);
+     grid-template-rows: repeat(3,20vw);
+     
+}
+}
+.emoji{
+    display: none;
+}
+img{
+    height: 35vh;
+}
